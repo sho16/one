@@ -1,0 +1,47 @@
+import java.util.Random;
+ 
+ //class random1 {
+   
+ 
+ //     Random rand = new Random();
+      
+  //   public int n = rand.nextInt(10);
+        
+   //   }
+ 
+ 
+ //----------------------------------------------------------------
+
+class con1 {
+	   int a;
+	   int b;
+	  // int c;
+	   
+	   
+	   
+	   // Ниже конструктор
+	   con1 (int A, int B ) {
+		   Random rand = new Random();
+		   int n = rand.nextInt(10);  
+		   int m = rand.nextInt(10);
+		   a=A*n;
+		   b=B*m;
+		  
+		   
+		      
+		    
+	      
+	   }
+	}
+	public class randomize {
+
+		   public static void main(String args[]) {
+			   con1 t1 = new con1(10, 4);
+			 //  Random rand = new Random();
+			   // int n = rand.nextInt(10);
+			   //constr t2 = new constr();
+		      System.out.println(t1.a);
+		      System.out.println(t1.b);
+		     
+		   }
+		}
