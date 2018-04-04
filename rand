@@ -1,0 +1,55 @@
+Шаг 1 — Импорт класса Java Random.
+Java
+import java.util.Random;
+1
+	
+import java.util.Random;
+
+Шаг 2 — Создание экземпляра Random-класса.
+Java
+Random rand = new Random();
+1
+	
+Random rand = new Random();
+
+Шаг 3 — Вызовите метод nextInt().
+
+nextInt() метод принимает целочисленный параметр. Он генерирует случайное число от 0 до этого числа, но не включает этот номер. Например, следующая команда генерирует случайное число от 0 до 9:
+Java
+int num = rand.nextInt(10);
+1
+	
+int num = rand.nextInt(10);
+
+Полный пример генерации случайного числа на Java
+
+Эта программа печатает 100 случайных чисел от 0 до 9:
+Java
+import java.util.Random;
+
+public class Test {
+   public static void main(String[] args) {
+
+      Random rand = new Random();
+      
+      for (int i=0; i < 100; i++) {
+         int n = rand.nextInt(10);
+         System.out.println(n);
+      }
+   }
+}
+
+	
+import java.util.Random;
+ 
+public class Test {
+   public static void main(String[] args) {
+ 
+      Random rand = new Random();
+      
+      for (int i=0; i < 100; i++) {
+         int n = rand.nextInt(10);
+         System.out.println(n);
+      }
+   }
+}
